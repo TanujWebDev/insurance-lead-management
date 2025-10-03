@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/insurance-lead-management/static/css/main.3b40f481.css",
+    "main.js": "/insurance-lead-management/static/js/main.e39413b1.js",
+    "index.html": "/insurance-lead-management/index.html",
+    "main.3b40f481.css.map": "/insurance-lead-management/static/css/main.3b40f481.css.map",
+    "main.e39413b1.js.map": "/insurance-lead-management/static/js/main.e39413b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b40f481.css",
+    "static/js/main.e39413b1.js"
+  ]
+}
