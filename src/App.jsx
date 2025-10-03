@@ -25,7 +25,9 @@ export default function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<div />} />
+        {/* Home */}
+        <Route path="/" element={<Home />} />
+
         {/* Branch Management */}
         <Route
           path="/branch/branch-master"
@@ -51,6 +53,7 @@ export default function App() {
           path="/branch/payout-structure"
           element={<Placeholder title="Payout Structure" />}
         />
+
         {/* Lead Management */}
         <Route path="/lead/lead-master" element={<LeadMasterForm />} />
         <Route path="/lead/vehicle-master" element={<VehicleMasterForm />} />
@@ -59,34 +62,20 @@ export default function App() {
           element={<LifeHealthMasterForm />}
         />
         <Route path="/lead/sme-master" element={<SmeMasterForm />} />
+
         {/* Quote Management */}
-        <Route path="/quote/motor-quote" element={<MotorQuoteForm />} />{" "}
-        <Route path="/quote/life-quote" element={<LifeQuoteForm />} />"
+        <Route path="/quote/motor-quote" element={<MotorQuoteForm />} />
+        <Route path="/quote/life-quote" element={<LifeQuoteForm />} />
         <Route path="/quote/health-quote" element={<HealthQuoteForm />} />
-        {/* 👈 update */}
-        <Route
-          path="/quote/life-quote"
-          element={<Placeholder title="Life Quote" />}
-        />
-        <Route
-          path="/quote/health-quote"
-          element={<Placeholder title="Health Quote" />}
-        />
         <Route
           path="/quote/sme-quote"
           element={<Placeholder title="SME Quote" />}
         />
+
         {/* Document Management */}
         <Route path="/docs/document-upload" element={<DocumentUploadForm />} />
         <Route path="/docs/policy-upload" element={<PolicyUpload />} />
-        <Route
-          path="/docs/document-upload"
-          element={<Placeholder title="Document Upload" />}
-        />
-        <Route
-          path="/docs/policy-upload"
-          element={<Placeholder title="Policy Upload" />}
-        />
+
         {/* Business Management */}
         <Route
           path="/biz/business-login-master"
@@ -94,38 +83,14 @@ export default function App() {
         />
         <Route path="/biz/policy-master" element={<PolicyMasters />} />
         <Route path="/biz/points-master" element={<PointsMaster />} />
-        <Route path="/biz/partner-point" element={<PartnerPoints />} />
-        <Route
-          path="/biz/partner-point-process"
-          element={<PartnerPayoutProcess />}
-        />
         <Route
           path="/biz/points-verification"
           element={<PointsVerification />}
         />
-        <Route
-          path="/biz/business-login-master"
-          element={<Placeholder title="Business Login Master" />}
-        />
-        <Route
-          path="/biz/policy-master"
-          element={<Placeholder title="Policy Master" />}
-        />
-        <Route
-          path="/biz/points-master"
-          element={<Placeholder title="Points Master" />}
-        />
-        <Route
-          path="/biz/points-verification"
-          element={<Placeholder title="Points Verification" />}
-        />
-        <Route
-          path="/biz/partner-point"
-          element={<Placeholder title="Partner Point" />}
-        />
+        <Route path="/biz/partner-point" element={<PartnerPoints />} />
         <Route
           path="/biz/partner-point-process"
-          element={<Placeholder title="Partner Point Process" />}
+          element={<PartnerPayoutProcess />}
         />
       </Routes>
 
